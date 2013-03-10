@@ -21,6 +21,7 @@ Feature: generate a team code
 		And  I submit data
 		Then I should see a success message
 		And The email of responsible team and association between the responsible and the team should be stored in the database
+		And The email of responsible should be added to mailling list of the tournament
 		And The team code should be sent by email
 		And I should be redirect to the generate codes page
 		And I should see the team code
