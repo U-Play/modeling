@@ -1,4 +1,4 @@
-Feature: generate a team code
+Feature: player validation
 
 	In order to have all players correct  
 	As a Web Manager, Administrator or Root user
