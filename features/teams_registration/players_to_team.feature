@@ -10,18 +10,18 @@ Feature: players registration in a team
 		#       |  Web Manager  |
 		#       | Administrator |
 		#       |     Root      |
-		Given I am at the players registration page 
+		Given I am at the players association page 
 
 	Scenario: Add successfully players to a team
 
 		I should be able to add players to a team
 
-		Given I am at the players registration page
+		Given I am at the players association page
 		When I fill the name of the player
 		And  I submit data
 		Then I should see a success message
 		And The associations between the player and the team should be stored in the database
-		And I should be redirect to the players registration page
+		And I should be redirect to the players association page
 
 	Scenario Outline: Add a non existing player 
 	
@@ -30,28 +30,28 @@ Feature: players registration in a team
 		When I fill a player name that don't exist
 		And I submit that data
 		Then I should see an error message
-		And I should be redirect to the players creation page
+		And I should be redirect to the players association page
 		
 
 	Scenario: Change successfully player of a team
 
 		I should be able to edit the player 
 
-		Given I am at the players registration page
+		Given I am at the players association page
 		When I edit the player name
 		And I submit the changes
 		Then I should see a success message
 		And The association between the new player and the team should be stored in the database
 		And The association between the older player and the tournament should be destroyed in the database
-		And I should be redirect to the players registration page
+		And I should be redirect to the players association page
 
 
 	Scenario Outline: Change for a non existing player
 
 		I should be notified if I try to change for a non existing player
 
-		Given I am at the players registration page
+		Given I am at the players association page
 		When I edit the player name
 		And I submit the changes
 		Then I should see an error message 
-		And I should be redirect to the players creation page
+		And I should be redirect to the players association page
