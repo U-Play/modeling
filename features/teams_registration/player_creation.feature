@@ -1,8 +1,8 @@
-Feature: players registration in a team
+Feature: players creation
 
 	In order to have all players of the tournament 
 	As a Web Manager, Administrator or Root user
-	I want to be able add or remove players of a team 
+	I want to be able add players to the tournament 
 
 	Background:     
 		#Given I am authenticated
