@@ -21,6 +21,7 @@ Feature: players registration in a team
 		And  I submit data
 		Then I should see a success message
 		And The associations between the player and the team should be stored in the database
+		And The administrator should be notified 
 		And I should be redirect to the players association page
 
 	Scenario Outline: Add a non existing player 
@@ -43,6 +44,7 @@ Feature: players registration in a team
 		Then I should see a success message
 		And The association between the new player and the team should be stored in the database
 		And The association between the older player and the tournament should be destroyed in the database
+		And The administrator should be notified 
 		And I should be redirect to the players association page
 
 
