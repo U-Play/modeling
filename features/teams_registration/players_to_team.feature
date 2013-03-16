@@ -17,18 +17,19 @@ Feature: players registration in a team
 		I should be able to add players to a team
 
 		Given I am at the players association page
-		When I fill the name of the player
+		When I fill the email of the player
 		And  I submit data
 		Then I should see a success message
 		And The associations between the player and the team should be stored in the database
 		And The administrator should be notified 
 		And I should be redirect to the players association page
 
-	Scenario Outline: Add a non existing player 
+	Scenario Outline: Add a player of another team 
 	
-		I should be notified if I try to insert a non existing player 
-
-		When I fill a player name that don't exist
+		I should be notified if I try to insert a player of another team
+		
+		Given I am at the players association page
+		When I fill a player of a player of another team
 		And I submit that data
 		Then I should see an error message
 		And I should be redirect to the players association page
@@ -39,21 +40,21 @@ Feature: players registration in a team
 		I should be able to edit the player 
 
 		Given I am at the players association page
-		When I edit the player name
+		When I edit the team of the player
 		And I submit the changes
 		Then I should see a success message
-		And The association between the new player and the team should be stored in the database
-		And The association between the older player and the tournament should be destroyed in the database
+		And The association between the new team and the player should be stored in the database
+		And The association between the older team and the player should be destroyed in the database
 		And The administrator should be notified 
 		And I should be redirect to the players association page
 
 
-	Scenario Outline: Change for a non existing player
+	Scenario Outline: Change for a non existing team
 
-		I should be notified if I try to change for a non existing player
+		I should be notified if I try to change for a non existing team
 
 		Given I am at the players association page
-		When I edit the player name
+		When I edit the player team
 		And I submit the changes
 		Then I should see an error message 
 		And I should be redirect to the players association page
