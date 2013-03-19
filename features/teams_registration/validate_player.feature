@@ -1,13 +1,13 @@
 Feature: player validation
 
 	In order to have all players correct  
-	As a AdminValidator, Administrator or Root user
+	As a Validator, Administrator or Root user
 	I want to be able validate players 
 
 	Background:     
 		Given I am authenticated
 		And My user role is 
-		       |  AdminValidator  |
+		       |  Validator  |
 		Given I am at the players validation page 
 
 	Scenario: Validate successfully a player
