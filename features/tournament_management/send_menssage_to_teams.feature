@@ -1,15 +1,13 @@
 Feature: send a message to all teams  
 
 	In order to communicate with all teams   
-	As a Web Manager, Administrator or Root user
+	As a Administrator or Root user
 	I want to be able to send a messages  
 
 	Background:     
-		#Given I am authenticated
-		#And My user role is 
-		#       |  Web Manager  |
-		#       | Administrator |
-		#       |     Root      |
+		Given I am authenticated
+		And My user role is 
+		       | Administrator |
 		Given I am at the tournament communication page 
 
 	Scenario: send successfully a message  
