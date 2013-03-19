@@ -1,7 +1,7 @@
 Feature: team registration 
 
 	In order to have teams that will participate in a tournament
-	As a  Administrator or Root user
+	As an Administrator or Root user
 	I want to be able to register a team  
 
 	Background:     
