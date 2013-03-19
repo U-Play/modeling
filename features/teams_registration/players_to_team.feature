@@ -7,7 +7,7 @@ Feature: players registration in a team
 	Background:     
 		Given I am authenticated
 		And My user role is 
-		       | TeamManager |
+		       | Manager |
 		Given I am at the management team page 
 
 	Scenario: Add successfully a player to a team
