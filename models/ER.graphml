@@ -165,7 +165,7 @@ description<y:LabelModel>
           <y:Geometry height="54.08903490759758" width="80.0" x="792.5271624840445" y="422.22288069260236"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="34.01171875" x="22.994140625" y="4.0">Local</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="53.318359375" x="13.3408203125" y="4.0">Location</y:NodeLabel>
           <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="custom" textColor="#000000" visible="true" width="24.373046875" x="2.0" y="29.962890625">city<y:LabelModel>
               <y:ErdAttributesNodeLabelModel/>
             </y:LabelModel>
@@ -1593,7 +1593,6 @@ description<y:LabelModel>
       </data>
     </edge>
     <edge id="e58" source="n15" target="n16">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-25.77364065708423" sy="-2.434824166680187" tx="0.0" ty="0.0"/>
@@ -1604,7 +1603,6 @@ description<y:LabelModel>
       </data>
     </edge>
     <edge id="e59" source="n11" target="n16">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-25.77364065708423" sy="1.0342498107881397" tx="0.0" ty="0.0"/>
@@ -1615,7 +1613,6 @@ description<y:LabelModel>
       </data>
     </edge>
     <edge id="e60" source="n11" target="n47">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="35.04811293634475" sy="20.980171782040713" tx="0.0" ty="0.0"/>
@@ -1626,7 +1623,6 @@ description<y:LabelModel>
       </data>
     </edge>
     <edge id="e61" source="n15" target="n47">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="35.04811293634475" sy="0.8894961618619845" tx="0.0" ty="0.0"/>
