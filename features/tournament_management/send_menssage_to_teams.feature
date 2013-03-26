@@ -14,8 +14,8 @@ Feature: send a message to all teams
 
 		I should be able to send a message
 
-		Given I am at the tournament communication page
 		When I write a message
 		And I send the message 
 		Then I should see a success message
 		And The message should be sent to the mailling list of tournament
+		And I should be redirected to the tournament communication page
