@@ -1,35 +1,32 @@
-Feature: tournament information management
+Feature: add tournament information 
 
 	In order to have all details of tournament information 
-	As a Web Manager, Administrator or Root user
+	As an Administrator or Root user
 	I want to be able insert, edit and delete the tournament information 
 
 	Background:     
-		#Given I am authenticated
-		#And My user role is 
-		#       |  Web Manager  |
-		#       | Administrator |
-		#       |     Root      |
+		Given I am authenticated
+		And My user role is 
+		       | Administrator |
 		Given I am at the tournament information page 
 
-	Scenario: Insert successfully the tournament's details
+	Scenario: add successfully the tournament's details
 
 		I should be able to insert tournament's details
 
-		Given I am at the tournament information management page
 		When I fill in all fields of tournament information
-		And  I submit data
+		And  I submit the data
 		Then I should see a success message
-		And The tournament information should be stored in the database
-		And I should be redirect to the tournament information page
+		And The tournament information should be stored
+		And I should be redirected to the tournament information page
 
-	Scenario Outline: Insert tournament information with required field not filled in
+	Scenario Outline: add tournament information with required field not filled in
 	
 		I should be notified if I try to insert the tournament information
 		without filling in all the required fields
 
 		When I leave the <field> of the tournament information blank
-		And I submit that data
+		And I submit the data
 		Then I should see an error message
 		And I should stay at the tournament information management page
 		And All fields filled in before trying to submit the tournament information with the <field> blank should remain as they were
@@ -38,11 +35,11 @@ Feature: tournament information management
 	Examples:
 			| field			|
 			| name			|
-			| descreption	|
+			| description	|
 			| city			|
 			| local			|
 			| rules			|
-			| conacts		|
+			| contacts		|
 			| start date	|
 			| end date		|
 			#| poster		|
@@ -55,8 +52,8 @@ Feature: tournament information management
 		When I edit the tournament name
 		And I submit the changes
 		Then I should see a success message
-		And The new tournament information data should be stored in the database
-		And I should be redirect to the tournament information page
+		And The new tournament information data should be stored
+		And I should be redirected to the tournament information page
 
 
 	Scenario Outline: Edit the tournament information with a required field not filled in
@@ -73,11 +70,11 @@ Feature: tournament information management
 			Examples:
 			| field			|
 			| name			|
-			| descreption	|
+			| description	|
 			| city			|
 			| local			|
 			| rules			|
-			| conacts		|
+			| contacts		|
 			| start date	|
 			| end date		|
 			#| poster		|
