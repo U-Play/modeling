@@ -20,7 +20,7 @@ Feature: tournament format management
 		And The tournament format should be stored
 		And I should be redirected to the tournament page
 
-	Scenario Outline: Don't select the tournament format
+	Scenario: Don't select the tournament format
 	
 		I should be notified if I try to select a blank tournament format
 
