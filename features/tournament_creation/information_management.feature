@@ -1,4 +1,4 @@
-Feature: add tournament information 
+Feature: tournament information management 
 
 	In order to have all details of tournament information 
 	As an Administrator or Root user
