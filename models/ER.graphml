@@ -574,10 +574,10 @@ sports_number<y:LabelModel>
     <node id="n27">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.relationship">
-          <y:Geometry height="32.0" width="116.01002053388095" x="-76.11552361396286" y="1009.5861190965089"/>
+          <y:Geometry height="32.0" width="116.01002053388095" x="-76.11552361396286" y="1033.0455852156056"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="custom" textColor="#000000" visible="true" width="66.91796875" x="24.546025891940474" y="7.018554687499886">created_by<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="custom" textColor="#000000" visible="true" width="66.91796875" x="24.546025891940474" y="7.0185546875">created_by<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -1158,11 +1158,12 @@ result<y:LabelModel>
     <node id="n57">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="54.08903490759758" width="80.0" x="261.2917987679673" y="962.9036516593596"/>
+          <y:Geometry height="63.176424334036255" width="80.0" x="261.2917987679673" y="962.9036516593596"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="44.833984375" x="17.5830078125" y="4.0">Course</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="custom" textColor="#000000" visible="true" width="35.962890625" x="2.0" y="29.962890625">name<y:LabelModel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="custom" textColor="#000000" visible="true" width="76.41015625" x="2.0" y="29.962890625">name
+abbreviation<y:LabelModel>
               <y:ErdAttributesNodeLabelModel/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -1654,7 +1655,7 @@ result<y:LabelModel>
     <edge id="e40" source="n26" target="n27">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.9016919917860378" sy="19.391868583162022" tx="0.0" ty="0.0"/>
+          <y:Path sx="-10.14916737160081" sy="42.85133470225878" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="crows_foot_one_optional" target="none"/>
           <y:BendStyle smoothed="false"/>
